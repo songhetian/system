@@ -1,0 +1,27 @@
+.pageContainer {
+  padding: 24px;
+}
+
+.pageContent {
+  margin-top: 16px;
+}
+
+.filterCard {
+  margin-bottom: 16px;
+}
+
+.monthSelect {
+  width: 120px;
+}
+
+.yearSelect {
+  width: 120px;
+}
+
+.dangerText {
+  color: var(--color-danger-6);
+}
+
+.warningText {
+  color: var(--color-warning-6);
+}

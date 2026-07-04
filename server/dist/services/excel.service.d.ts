@@ -1,0 +1,107 @@
+import type { ExcelModule, ExcelTaskType } from '@shop/shared';
+export declare function createExcelTask(module: ExcelModule, type: ExcelTaskType, fileName: string, creatorId: number): Promise<{
+    createdAt: Date;
+    id: number;
+    type: import("@prisma/client").$Enums.ExcelTaskType;
+    updatedAt: Date;
+    status: import("@prisma/client").$Enums.ExcelTaskStatus;
+    successCount: number;
+    failCount: number;
+    errorFileUrl: string | null;
+    fileName: string;
+    fileUrl: string | null;
+    totalRows: number;
+    processedRows: number;
+    module: import("@prisma/client").$Enums.ExcelModule;
+    creatorId: number;
+}>;
+export declare function submitImportTask(module: ExcelModule, fileName: string, creatorId: number, fileBuffer: Buffer): Promise<{
+    taskId: number;
+    jobId: string;
+}>;
+export declare function getExcelTaskById(id: number): Promise<{
+    createdAt: Date;
+    id: number;
+    type: import("@prisma/client").$Enums.ExcelTaskType;
+    updatedAt: Date;
+    status: import("@prisma/client").$Enums.ExcelTaskStatus;
+    successCount: number;
+    failCount: number;
+    errorFileUrl: string | null;
+    fileName: string;
+    fileUrl: string | null;
+    totalRows: number;
+    processedRows: number;
+    module: import("@prisma/client").$Enums.ExcelModule;
+    creatorId: number;
+} | null>;
+export declare function listExcelTasks(creatorId?: number, module?: ExcelModule, status?: string): Promise<{
+    createdAt: Date;
+    id: number;
+    type: import("@prisma/client").$Enums.ExcelTaskType;
+    updatedAt: Date;
+    status: import("@prisma/client").$Enums.ExcelTaskStatus;
+    successCount: number;
+    failCount: number;
+    errorFileUrl: string | null;
+    fileName: string;
+    fileUrl: string | null;
+    totalRows: number;
+    processedRows: number;
+    module: import("@prisma/client").$Enums.ExcelModule;
+    creatorId: number;
+}[]>;
+export declare function updateExcelTaskProgress(id: number, processedRows: number, totalRows: number, successCount: number, failCount: number): Promise<{
+    createdAt: Date;
+    id: number;
+    type: import("@prisma/client").$Enums.ExcelTaskType;
+    updatedAt: Date;
+    status: import("@prisma/client").$Enums.ExcelTaskStatus;
+    successCount: number;
+    failCount: number;
+    errorFileUrl: string | null;
+    fileName: string;
+    fileUrl: string | null;
+    totalRows: number;
+    processedRows: number;
+    module: import("@prisma/client").$Enums.ExcelModule;
+    creatorId: number;
+}>;
+export declare function completeExcelTask(id: number, fileUrl?: string, errorFileUrl?: string): Promise<{
+    createdAt: Date;
+    id: number;
+    type: import("@prisma/client").$Enums.ExcelTaskType;
+    updatedAt: Date;
+    status: import("@prisma/client").$Enums.ExcelTaskStatus;
+    successCount: number;
+    failCount: number;
+    errorFileUrl: string | null;
+    fileName: string;
+    fileUrl: string | null;
+    totalRows: number;
+    processedRows: number;
+    module: import("@prisma/client").$Enums.ExcelModule;
+    creatorId: number;
+}>;
+export declare function failExcelTask(id: number, errorFileUrl?: string): Promise<{
+    createdAt: Date;
+    id: number;
+    type: import("@prisma/client").$Enums.ExcelTaskType;
+    updatedAt: Date;
+    status: import("@prisma/client").$Enums.ExcelTaskStatus;
+    successCount: number;
+    failCount: number;
+    errorFileUrl: string | null;
+    fileName: string;
+    fileUrl: string | null;
+    totalRows: number;
+    processedRows: number;
+    module: import("@prisma/client").$Enums.ExcelModule;
+    creatorId: number;
+}>;
+export declare function processEmployeeImport(taskId: number, rows: any[]): Promise<{
+    successCount: number;
+    failCount: number;
+    errors: any[];
+}>;
+//# sourceMappingURL=excel.service.d.ts.map

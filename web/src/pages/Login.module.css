@@ -1,0 +1,21 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-fill-1);
+}
+
+.card {
+  width: 400px;
+  padding: 16px;
+}
+
+.titleWrapper {
+  margin-bottom: 24px;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+}

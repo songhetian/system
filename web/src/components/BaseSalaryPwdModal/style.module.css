@@ -1,0 +1,32 @@
+.modal {
+}
+
+.form {
+  padding-top: 8px;
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.lockIcon {
+  font-size: 48px;
+  color: var(--color-primary-6);
+}
+
+.alert {
+  margin-bottom: 16px;
+}
+
+.passwordItem {
+  margin-bottom: 16px;
+}
+
+.tip {
+  margin: 0;
+  text-align: center;
+  color: var(--color-text-3);
+  font-size: 12px;
+}

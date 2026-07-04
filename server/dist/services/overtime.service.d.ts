@@ -1,0 +1,123 @@
+import type { OvertimeRequestCreate, OvertimeRequestUpdate, OvertimeRequestQuery, OvertimeRecordCreate } from '@shop/shared';
+export declare function createOvertimeRequest(data: OvertimeRequestCreate): Promise<{
+    createdAt: Date;
+    id: number;
+    type: import("@prisma/client").$Enums.OvertimeType;
+    reason: string;
+    employeeId: number;
+    updatedAt: Date;
+    status: import("@prisma/client").$Enums.OvertimeStatus;
+    startDateTime: Date;
+    endDateTime: Date;
+    approvedHours: import("@prisma/client/runtime/library").Decimal;
+    workflowInstanceId: number | null;
+    rejectReason: string | null;
+} | null>;
+export declare function listOvertimeRequests(query: OvertimeRequestQuery): Promise<{
+    total: number;
+    items: {
+        createdAt: Date;
+        id: number;
+        type: import("@prisma/client").$Enums.OvertimeType;
+        reason: string;
+        employeeId: number;
+        updatedAt: Date;
+        status: import("@prisma/client").$Enums.OvertimeStatus;
+        startDateTime: Date;
+        endDateTime: Date;
+        approvedHours: import("@prisma/client/runtime/library").Decimal;
+        workflowInstanceId: number | null;
+        rejectReason: string | null;
+    }[];
+}>;
+export declare function getOvertimeRequest(id: number): Promise<{
+    createdAt: Date;
+    id: number;
+    type: import("@prisma/client").$Enums.OvertimeType;
+    reason: string;
+    employeeId: number;
+    updatedAt: Date;
+    status: import("@prisma/client").$Enums.OvertimeStatus;
+    startDateTime: Date;
+    endDateTime: Date;
+    approvedHours: import("@prisma/client/runtime/library").Decimal;
+    workflowInstanceId: number | null;
+    rejectReason: string | null;
+}>;
+export declare function updateOvertimeRequest(id: number, data: OvertimeRequestUpdate): Promise<{
+    createdAt: Date;
+    id: number;
+    type: import("@prisma/client").$Enums.OvertimeType;
+    reason: string;
+    employeeId: number;
+    updatedAt: Date;
+    status: import("@prisma/client").$Enums.OvertimeStatus;
+    startDateTime: Date;
+    endDateTime: Date;
+    approvedHours: import("@prisma/client/runtime/library").Decimal;
+    workflowInstanceId: number | null;
+    rejectReason: string | null;
+}>;
+export declare function approveOvertimeRequest(id: number, approvedHours?: number): Promise<{
+    createdAt: Date;
+    id: number;
+    type: import("@prisma/client").$Enums.OvertimeType;
+    reason: string;
+    employeeId: number;
+    updatedAt: Date;
+    status: import("@prisma/client").$Enums.OvertimeStatus;
+    startDateTime: Date;
+    endDateTime: Date;
+    approvedHours: import("@prisma/client/runtime/library").Decimal;
+    workflowInstanceId: number | null;
+    rejectReason: string | null;
+} | null>;
+export declare function rejectOvertimeRequest(id: number, reason?: string): Promise<{
+    createdAt: Date;
+    id: number;
+    type: import("@prisma/client").$Enums.OvertimeType;
+    reason: string;
+    employeeId: number;
+    updatedAt: Date;
+    status: import("@prisma/client").$Enums.OvertimeStatus;
+    startDateTime: Date;
+    endDateTime: Date;
+    approvedHours: import("@prisma/client/runtime/library").Decimal;
+    workflowInstanceId: number | null;
+    rejectReason: string | null;
+}>;
+export declare function cancelOvertimeRequest(id: number): Promise<{
+    createdAt: Date;
+    id: number;
+    type: import("@prisma/client").$Enums.OvertimeType;
+    reason: string;
+    employeeId: number;
+    updatedAt: Date;
+    status: import("@prisma/client").$Enums.OvertimeStatus;
+    startDateTime: Date;
+    endDateTime: Date;
+    approvedHours: import("@prisma/client/runtime/library").Decimal;
+    workflowInstanceId: number | null;
+    rejectReason: string | null;
+}>;
+export declare function createOvertimeRecord(data: OvertimeRecordCreate): Promise<{
+    createdAt: Date;
+    id: number;
+    employeeId: number;
+    requestId: number;
+    actualStart: Date;
+    actualEnd: Date;
+    durationHours: import("@prisma/client/runtime/library").Decimal;
+    compensatoryHours: import("@prisma/client/runtime/library").Decimal;
+}>;
+export declare function listOvertimeRecords(employeeId?: number, requestId?: number): Promise<{
+    createdAt: Date;
+    id: number;
+    employeeId: number;
+    requestId: number;
+    actualStart: Date;
+    actualEnd: Date;
+    durationHours: import("@prisma/client/runtime/library").Decimal;
+    compensatoryHours: import("@prisma/client/runtime/library").Decimal;
+}[]>;
+//# sourceMappingURL=overtime.service.d.ts.map

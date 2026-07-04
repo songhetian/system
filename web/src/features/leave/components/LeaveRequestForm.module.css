@@ -1,0 +1,15 @@
+.formWrap {
+  width: 100%;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.flexItem {
+  flex: 1;
+}
+
+.timeItem {
+  width: 140px;
+}

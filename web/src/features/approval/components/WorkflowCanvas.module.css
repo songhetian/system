@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+  height: 100%;
+}
+
+.addButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 10;
+}
+
+.nodeOptionIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

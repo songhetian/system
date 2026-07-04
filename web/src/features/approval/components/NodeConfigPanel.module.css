@@ -1,0 +1,49 @@
+.panel {
+  width: 320px;
+  background-color: var(--color-bg-1);
+  border-left: 1px solid var(--color-border-2);
+  padding: 16px;
+  overflow-y: auto;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text-1);
+}
+
+.conditionHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.conditionIcon {
+  color: var(--color-warning-6);
+}
+
+.conditionText {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-1);
+}
+
+.optionDescription {
+  font-size: 12px;
+  color: var(--color-text-3);
+}
+
+.saveButton {
+  margin-top: 16px;
+}

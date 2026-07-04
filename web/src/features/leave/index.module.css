@@ -1,0 +1,15 @@
+.pageContainer {
+  padding: 24px;
+}
+
+.pageContent {
+  margin-top: 16px;
+}
+
+.filterCard {
+  margin-bottom: 16px;
+}
+
+.yearSelect {
+  width: 120px;
+}

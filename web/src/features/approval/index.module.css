@@ -1,0 +1,15 @@
+.page {
+  padding: 24px;
+  background: var(--color-fill-1);
+  min-height: 100%;
+}
+
+.card {
+  margin-top: 16px;
+}
+
+.toolbar {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,23 @@
+.pageContainer {
+  padding: 24px;
+}
+
+.filterRow {
+  margin-bottom: 16px;
+}
+
+.filterSelect {
+  width: 200px;
+}
+
+.filterSmall {
+  width: 100px;
+}
+
+.filterMedium {
+  width: 120px;
+}
+
+.statRow {
+  margin-bottom: 16px;
+}

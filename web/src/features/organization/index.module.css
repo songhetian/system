@@ -1,0 +1,47 @@
+.pageContainer {
+  padding: 24px;
+}
+
+.actionBar {
+  margin-bottom: 16px;
+}
+
+.dragList {
+  border: 0.5px solid var(--color-border-2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dragHeader {
+  display: flex;
+  padding: 10px 16px;
+  background: var(--color-fill-2);
+  font-weight: 500;
+  font-size: 13px;
+  border-bottom: 0.5px solid var(--color-border-2);
+}
+
+.dragRow {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-bottom: 0.5px solid var(--color-border-2);
+}
+
+.dragHandle {
+  width: 36px;
+  color: var(--color-text-3);
+  cursor: grab;
+}
+
+.dragName {
+  flex: 2;
+}
+
+.dragSort {
+  width: 80px;
+}
+
+.dragActions {
+  width: 160px;
+}

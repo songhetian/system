@@ -1,0 +1,58 @@
+.container {
+  padding: 0;
+}
+
+.pageHeader {
+  margin-bottom: 16px;
+  padding: 0;
+  background: transparent;
+}
+
+.bottomSection {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.quickLink {
+  color: var(--color-primary-6);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.quickLink:hover {
+  text-decoration: underline;
+}
+
+.announcement {
+  padding: 8px 0;
+  border-bottom: 0.5px solid var(--color-border-2);
+  margin: 0;
+}
+
+.dimText {
+  color: var(--color-text-3);
+  font-size: 14px;
+}
+
+.chartSection {
+  margin-top: 16px;
+}
+
+.chartTrend {
+  margin-top: 16px;
+}
+
+.chartDoughnut {
+  height: 260px;
+}
+
+.chartLine {
+  height: 240px;
+}
+
+.chartBar {
+  height: 200px;
+}

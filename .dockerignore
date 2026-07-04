@@ -1,0 +1,17 @@
+# 排除开发工具和配置
+*.log
+.git
+.gitignore
+.env
+.env.local
+.env.*.local
+*.md
+.vscode
+.idea
+.DS_Store
+
+# 排除后端源代码（保留构建产物）
+server/src
+
+# 排除前端源代码（保留构建产物）
+web/src

@@ -1,0 +1,42 @@
+.modalContent {
+  height: calc(90vh - 120px);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding: 16px;
+  background-color: var(--color-fill-1);
+  border-radius: 8px;
+}
+
+.headerForm {
+  flex: 1;
+}
+
+.nameInput {
+  width: 256px;
+}
+
+.descInput {
+  width: 384px;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.canvasContainer {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.canvasWrapper {
+  flex: 1;
+}

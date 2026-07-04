@@ -1,0 +1,56 @@
+.node {
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.nodeSelected {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  outline: 2px solid var(--color-primary-5);
+  outline-offset: 2px;
+}
+
+.nodeStart {
+  background-color: var(--color-success-6);
+}
+
+.nodeApproval {
+  background-color: var(--color-primary-6);
+}
+
+.nodeCondition {
+  background-color: var(--color-warning-6);
+}
+
+.nodeCc {
+  background-color: var(--color-primary-6);
+}
+
+.nodeEnd {
+  background-color: var(--color-danger-6);
+}
+
+.assigneeName {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.conditionTag {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.nodeContent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

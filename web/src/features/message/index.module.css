@@ -1,0 +1,17 @@
+.pageContainer {
+  padding: 24px;
+}
+
+.announceModal {
+  width: 700px;
+}
+
+.formGroup {
+  margin-bottom: 16px;
+}
+
+.formLabel {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 14px;
+}

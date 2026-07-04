@@ -1,0 +1,26 @@
+.pageContainer {
+  padding: 24px;
+}
+
+.filterRow {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.filterSelect {
+  width: 160px;
+}
+
+.filterAction {
+  width: 120px;
+}
+
+.varBefore {
+  font-size: 12px;
+  color: var(--color-text-3);
+}
+
+.varAfter {
+  font-size: 12px;
+}

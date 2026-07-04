@@ -1,0 +1,17 @@
+.pageContainer {
+  padding: 24px;
+}
+
+.filterCard {
+  margin-bottom: 16px;
+}
+
+.tableCard {
+  margin-top: 16px;
+}
+
+.batchBar {
+  margin-top: 16px;
+  background: var(--color-primary-light-1);
+  border: 1px solid var(--color-primary-light-3);
+}
